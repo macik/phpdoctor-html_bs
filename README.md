@@ -10,7 +10,7 @@ This Doclet developed on [this forked version](https://github.com/macik/phpdocto
 
 ## Install and setup
 
- * Download [PHPDoctor bundle](https://github.com/macik/phpdoctor/archive/master.zip) (if not done yet) than download [«html_bs» package](https://github.com/macik/phpdoctor-html_bs/archive/master.zip) and unpack files in `doclets/html_bs` subfolder of *PHPDoctor*.
+ * Download [PHPDoctor bundle](https://github.com/macik/phpdoctor/archive/master.zip) (if not done yet) than download [«html_bs» package](https://github.com/macik/phpdoctor-html_bs/releases/) and unpack files in `doclets/html_bs` subfolder of *PHPDoctor*.
  * Make or change [default INI file](https://github.com/macik/phpdoctor/blob/master/examples/phpdoctor.ini) to set «HTML_BS» doclet and text formatter as follows:
 
 	```
@@ -29,6 +29,12 @@ This Doclet developed on [this forked version](https://github.com/macik/phpdocto
 This doclet developed for [Cotonti CMS](https://www.cotonti.com/) project as replacement for ugly standard HTML doclet.
 
 For a demonstration of generation result for «HTML_BS» doclet you can view [Cotonti API reference](https://www.cotonti.com/reference/) pages.
+
+![image](https://cloud.githubusercontent.com/assets/1009926/16507810/7a3c28b0-3f35-11e6-8b9e-4b8102170edf.png)
+
+## Changelog and versions
+
+Last actual version is [0.5.0](https://github.com/macik/phpdoctor-html_bs/releases/tag/v0.5.0) and working in progress. So you can try last development version. 
 
 ## Author and license
 
