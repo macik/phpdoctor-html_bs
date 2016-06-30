@@ -156,7 +156,7 @@ class packageFrameWriter extends HTMLWriter
         $classes =& $rootDoc->classes();
         if ($classes) {
             ksort($classes);
-            echo '<div class="panel panel-default classes"><div class="panel-heading"><h3>Classes</h3></div>', "\n";
+            echo '<div class="panel panel-default classes"><div class="panel-heading"><h3 class="panel-title">Classes</h3></div>', "\n";
             echo '<div class="list-group">',"\n";
             foreach ($classes as $name => $class) {
                 $package =& $classes[$name]->containingPackage();
