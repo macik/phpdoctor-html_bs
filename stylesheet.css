@@ -1,0 +1,75 @@
+body {
+	padding: 0 20px;
+}
+
+/*h1[id^="letter"]:target, a[name^="line"]:target{padding-top:70px}*/
+h1:target, h2[id^='letter']:target, a[name]:target{padding-top:100px}
+a:visited{color:#5533b7;}
+dd{margin-bottom: 7px;}
+dd.tags{margin-top: 15px; }
+ul.list-tree{margin-bottom: 7px; font-size: 18px;}
+span.gap{margin-top: 70px; display: block;}
+thead{font-size: 1.5em;}
+code.signature{display: block; margin:10px 0;}
+
+.label-abstract {background-color: #5b9dbd;}
+.label-final {background-color: #795548;}
+.label-static {background-color: #563d7c;}
+.label-private {background-color: #ea5f55;}
+.label-protected {background-color: #ef9d25;}
+.label-public {background-color: #4caf50;}
+/* #9ebf0d */
+/* #ef5f32 */
+/* #ffc107 */
+/* #795548 */
+
+.bs-callout dl{margin-bottom: 0; margin-top: 15px;}
+
+.bs-callout {
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px
+}
+
+.bs-callout h4 {
+	margin-top: 0;
+	margin-bottom: 5px
+}
+
+.bs-callout p:last-child {
+	margin-bottom: 0
+}
+
+.bs-callout code {
+	border-radius: 3px
+}
+
+.bs-callout+.bs-callout {
+	margin-top: -5px
+}
+
+.bs-callout-danger {
+	border-left-color: #ce4844
+}
+
+.bs-callout-danger h4 {
+	color: #ce4844
+}
+
+.bs-callout-warning {
+	border-left-color: #aa6708
+}
+
+.bs-callout-warning h4 {
+	color: #aa6708
+}
+
+.bs-callout-info {
+	border-left-color: #1b809e
+}
+
+.bs-callout-info h4 {
+	color: #1b809e
+}
