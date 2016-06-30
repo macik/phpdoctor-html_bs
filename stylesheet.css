@@ -18,6 +18,17 @@ code.signature{display: block; margin:10px 0;}
 .label-private {background-color: #ea5f55;}
 .label-protected {background-color: #ef9d25;}
 .label-public {background-color: #4caf50;}
+
+ .panel-title{font-weight: bold;}
+ 
+.classes >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.functions >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.classes >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.interfaces >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.traits >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.exceptions >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+.globals >.panel-heading {color: #333; background-color: #f5f5f5; border-color: #ddd;}
+
 /* #9ebf0d */
 /* #ef5f32 */
 /* #ffc107 */

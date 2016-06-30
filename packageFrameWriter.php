@@ -70,67 +70,67 @@ class packageFrameWriter extends HTMLWriter
         $classes =& $package->ordinaryClasses();
         if ($classes && is_array($classes)) {
             ksort($classes);
-            echo "<h3>Classes</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default classes\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Classes</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($classes as $name => $class) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $classes[$name]->asPath(), '" target="main">', $classes[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $classes[$name]->asPath(), '" target="main">', $classes[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         $interfaces =& $package->interfaces();
         if ($interfaces && is_array($interfaces)) {
             ksort($interfaces);
-            echo "<h3>Interfaces</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default interfaces\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Interfaces</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($interfaces as $name => $interface) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $interfaces[$name]->asPath(), '" target="main">', $interfaces[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $interfaces[$name]->asPath(), '" target="main">', $interfaces[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         $traits =& $package->traits();
         if ($traits && is_array($traits)) {
             ksort($traits);
-            echo "<h3>Traits</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default traits\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Traits</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($traits as $name => $trait) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $traits[$name]->asPath(), '" target="main">', $traits[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $traits[$name]->asPath(), '" target="main">', $traits[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         $exceptions =& $package->exceptions();
         if ($exceptions && is_array($exceptions)) {
             ksort($exceptions);
-            echo "<h3>Exceptions</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default exceptions\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Exceptions</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($exceptions as $name => $exception) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $exceptions[$name]->asPath(), '" target="main">', $exceptions[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $exceptions[$name]->asPath(), '" target="main">', $exceptions[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         $functions =& $package->functions();
         if ($functions && is_array($functions)) {
             ksort($functions);
-            echo "<h3>Functions</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default functions\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Functions</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($functions as $name => $function) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $functions[$name]->asPath(), '" target="main">', $functions[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $functions[$name]->asPath(), '" target="main">', $functions[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         $globals =& $package->globals();
         if ($globals && is_array($globals)) {
             ksort($globals);
-            echo "<h3>Globals</h3>\n";
-            echo "<ul>\n";
+            echo "<div class=\"panel panel-default globals\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Globals</h3></div>\n";
+            echo "<div class=\"list-group\">\n";
             foreach ($globals as $name => $global) {
-                echo '<li><a href="', str_repeat('../', $package->depth() + 1), $globals[$name]->asPath(), '" target="main">', $globals[$name]->name(), "</a></li>\n";
+                echo '<a class="list-group-item" href="', str_repeat('../', $package->depth() + 1), $globals[$name]->asPath(), '" target="main">', $globals[$name]->name(), "</a>\n";
             }
-            echo "</ul>\n\n";
+            echo "</div></div>\n\n";
         }
 
         echo '</body>', "\n\n";
@@ -156,7 +156,7 @@ class packageFrameWriter extends HTMLWriter
         $classes =& $rootDoc->classes();
         if ($classes) {
             ksort($classes);
-            echo '<div class="panel panel-default"><div class="panel-heading"><h3>Classes</h3></div>', "\n";
+            echo '<div class="panel panel-default classes"><div class="panel-heading"><h3>Classes</h3></div>', "\n";
             echo '<div class="list-group">',"\n";
             foreach ($classes as $name => $class) {
                 $package =& $classes[$name]->containingPackage();
@@ -174,7 +174,7 @@ class packageFrameWriter extends HTMLWriter
         $functions =& $rootDoc->functions();
         if ($functions) {
             ksort($functions);
-            echo '<div class="panel panel-info"><div class="panel-heading"><h3>Functions</h3></div>', "\n";
+            echo '<div class="panel panel-info functions"><div class="panel-heading"><h3>Functions</h3></div>', "\n";
             echo '<ul class="list-group">',"\n";
             foreach ($functions as $name => $function) {
                 $package =& $functions[$name]->containingPackage();

@@ -46,7 +46,7 @@ class packageIndexFrameWriter extends HTMLWriter
         echo '<a class="list-group-item" href="allitems-frame.html" target="index">All Items</a>'."\n";
         echo "</div>\n\n";
 
-        echo "<div class=\"panel panel-default\"><div class=\"panel-heading\"><h2>Namespaces</h2></div>\n\n";
+        echo "<div class=\"panel panel-default\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Namespaces</h2></div>\n\n";
 
         $rootDoc =& $this->_doclet->rootDoc();
 
